@@ -1,9 +1,7 @@
 language: node_js
-
-services:
-  - docker
-
+node_js:
+  - 7
 before_install:
-  - docker build -t laravelapp .
-  - docker run -d -p 8181:8181 laravelapp
+  - docker build -t nodeapp .
+  - docker run -d -p 9005:9005 nodeapp
 
